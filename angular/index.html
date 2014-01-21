@@ -17,7 +17,7 @@
         {{test1results.ms}} ms
       </span>
       <table class="table">
-        <tr ng-repeat="x in test1things">
+        <tr ng-repeat="x in test1things track by $index">
          <td>{{x.a}}</td>
          <td>{{x.a}}</td>
          <td>{{x.a}}</td>
