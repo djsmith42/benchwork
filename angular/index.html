@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BenchworkApp">
+  <head>
+    <title>AngularJS Performance</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ng-controller="MainController">
+    <div class="page-header">
+      <h1>AngularJS Performance Tests</h1>
+    </div>
+    <div class="tests">
+      <button class="btn btn-primary" ng-click="test1()">Test 1</button>
+      <span ng-show="test1results">
+        {{test1results.ms}} ms
+      </span>
+      <table>
+        <tr ng-repeat="x in test1things">
+         <td>{{x.a}}</td>
+         <td>{{x.a}}</td>
+         <td>{{x.a}}</td>
+         <td>{{x.a}}</td>
+         <td>{{x.a}}</td>
+         <td>{{x.a}}</td>
+        </tr>
+    </div>
+  </body>
+</html>
